@@ -1,0 +1,118 @@
+/* Общий контейнер чата */
+.chat-window {
+  width: 400px;
+  height: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  font-family: "Segoe UI", Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Список сообщений */
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Сообщение */
+.msg {
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 16px;
+  max-width: 70%;
+  word-wrap: break-word;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Сообщения собеседника */
+.msg.left {
+  background: #e5e5ea;
+  align-self: flex-start;
+  color: #000;
+}
+
+/* Сообщения пользователя */
+.msg.right {
+  background: #0088cc;
+  color: #fff;
+  align-self: flex-end;
+}
+
+/* Поле ввода */
+.input {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 8px;
+  background: #fff;
+}
+
+.input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input button {
+  margin-left: 8px;
+  padding: 10px 16px;
+  background: #0088cc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input button:hover {
+  background: #0077b3;
+}
+
+/* Форма логина */
+.login-form {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0088cc;
+}
+
+.login-form input {
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-form button {
+  padding: 10px;
+  background: #0088cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: #0077b3;
+}
