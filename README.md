@@ -1,16 +1,16 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Для ввода Chat ID, необходимо сделать следующее:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Найди тестового чат‑бота в Telegram: @testMyChatTelegram_bot
+2. Нажми кнопку Start и отправь одно‑два сообщения.
+3. Перейти по ссылке: https://api.telegram.org/bot8860001584:AAHfJcUUv9YJMnEQiZqhZ7C4SXRYLn_sMno/getUpdates 
+  В браузере откроется JSON‑файл с обновлениями.
+4. Пролистай ответ до своего сообщения. В блоке "from" найди поле "id".
+Это значение и есть твой Chat ID, который нужно вводить при запуске приложения. Токен чат‑бота вводить не нужно - подставляется автоматичеки
+5. ссылка на приложение: https://yuliya-1102.github.io/telegram-chat-react/
+6. для локального развертывания необходимо:
+- скачать файлы из репозитория: https://github.com/Yuliya-1102/telegram-chat-react.git
+- установить зависимости из package.json (npm install)
+- запустить проект в режиме разработки: npm run dev 
+После этого проект должен стартовать локально.
